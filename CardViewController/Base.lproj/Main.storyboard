@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OdU-Tj-kx4">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Example Page View Controller-->
+        <scene sceneID="4h8-up-fUf">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="loz-Gm-ieV" customClass="ExamplePageViewController" customModule="CardViewController" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G4p-8Y-0Z4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="94" y="-234"/>
+        </scene>
+        <!--Example Card View Controller-->
+        <scene sceneID="lmn-Jn-voL">
+            <objects>
+                <viewController id="ht3-NF-dME" customClass="ExampleCardViewController" customModule="CardViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Msd-Xk-7XZ">
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="666"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Pzy-xU-dw8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DeK-Jo-QFf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="94" y="541"/>
+        </scene>
+        <!--Number View Controller-->
+        <scene sceneID="CH5-Ta-Fab">
+            <objects>
+                <viewController storyboardIdentifier="numberViewController" id="2Oq-bC-Vqu" customClass="NumberViewController" customModule="CardViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z5J-c6-Pdd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7UA-dJ-gJH" customClass="BorderView" customModule="CardViewController" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYL-i5-oEy">
+                                        <rect key="frame" x="176" y="376" width="23" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="iYL-i5-oEy" firstAttribute="centerX" secondItem="7UA-dJ-gJH" secondAttribute="centerX" id="D3G-ff-ekj"/>
+                                    <constraint firstItem="iYL-i5-oEy" firstAttribute="centerY" secondItem="7UA-dJ-gJH" secondAttribute="centerY" id="sGq-eI-k2S"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7UA-dJ-gJH" firstAttribute="leading" secondItem="Z5J-c6-Pdd" secondAttribute="leading" id="0mu-6S-AXR"/>
+                            <constraint firstItem="7UA-dJ-gJH" firstAttribute="top" secondItem="Z5J-c6-Pdd" secondAttribute="top" id="WFL-4w-JxT"/>
+                            <constraint firstAttribute="trailing" secondItem="7UA-dJ-gJH" secondAttribute="trailing" id="cvy-cj-j4p"/>
+                            <constraint firstAttribute="bottom" secondItem="7UA-dJ-gJH" secondAttribute="bottom" id="pTW-Zr-RCm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vp3-og-Cfm"/>
+                    </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="iYL-i5-oEy" id="E27-Uk-R5a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HWQ-61-yTA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026" y="134"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="dNx-r4-SW1">
+            <objects>
+                <viewController id="OdU-Tj-kx4" customClass="RootViewController" customModule="CardViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="b2H-5e-qwe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5u8-Cs-ZFI">
+                                <rect key="frame" x="20" y="64" width="335" height="666"/>
+                                <connections>
+                                    <segue destination="ht3-NF-dME" kind="embed" id="oDV-PG-duV"/>
+                                </connections>
+                            </containerView>
+                            <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqS-My-1pE">
+                                <rect key="frame" x="20" y="64" width="335" height="666"/>
+                                <connections>
+                                    <segue destination="loz-Gm-ieV" kind="embed" id="3J5-mh-Rhl"/>
+                                </connections>
+                            </containerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nIb-qh-w69">
+                                <rect key="frame" x="50" y="750" width="275" height="29"/>
+                                <segments>
+                                    <segment title="Card"/>
+                                    <segment title="Page"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeContainerView:" destination="OdU-Tj-kx4" eventType="valueChanged" id="4JK-Zj-pGm"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="0.67000000000000004" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nIb-qh-w69" firstAttribute="top" secondItem="5u8-Cs-ZFI" secondAttribute="bottom" constant="20" id="G1h-h4-3o6"/>
+                            <constraint firstItem="5u8-Cs-ZFI" firstAttribute="leading" secondItem="Ir1-kO-CvV" secondAttribute="leading" constant="20" id="Jn3-1x-Iib"/>
+                            <constraint firstItem="Ir1-kO-CvV" firstAttribute="bottom" secondItem="nIb-qh-w69" secondAttribute="bottom" id="LJW-mN-auL"/>
+                            <constraint firstItem="gqS-My-1pE" firstAttribute="leading" secondItem="Ir1-kO-CvV" secondAttribute="leading" constant="20" id="Q6v-GU-bMS"/>
+                            <constraint firstItem="Ir1-kO-CvV" firstAttribute="trailing" secondItem="5u8-Cs-ZFI" secondAttribute="trailing" constant="20" id="R03-cw-1Lk"/>
+                            <constraint firstItem="nIb-qh-w69" firstAttribute="top" secondItem="gqS-My-1pE" secondAttribute="bottom" constant="20" id="Vqz-HN-pUF"/>
+                            <constraint firstItem="Ir1-kO-CvV" firstAttribute="trailing" secondItem="gqS-My-1pE" secondAttribute="trailing" constant="20" id="WI8-TC-ces"/>
+                            <constraint firstItem="5u8-Cs-ZFI" firstAttribute="top" secondItem="Ir1-kO-CvV" secondAttribute="top" constant="20" id="mMZ-dH-TvZ"/>
+                            <constraint firstItem="gqS-My-1pE" firstAttribute="top" secondItem="Ir1-kO-CvV" secondAttribute="top" constant="20" id="qyg-e6-kNJ"/>
+                            <constraint firstItem="Ir1-kO-CvV" firstAttribute="trailing" secondItem="nIb-qh-w69" secondAttribute="trailing" constant="50" id="y7f-v2-quy"/>
+                            <constraint firstItem="nIb-qh-w69" firstAttribute="leading" secondItem="Ir1-kO-CvV" secondAttribute="leading" constant="50" id="yZ2-Ig-G8c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ir1-kO-CvV"/>
+                    </view>
+                    <connections>
+                        <outlet property="cardContainerView" destination="5u8-Cs-ZFI" id="LZd-FI-YtY"/>
+                        <outlet property="pageContainerView" destination="gqS-My-1pE" id="9e8-i0-Pdg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWq-dv-sKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-881" y="134"/>
+        </scene>
+    </scenes>
+</document>
